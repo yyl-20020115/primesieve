@@ -166,7 +166,7 @@ endif()
 
 if(BUILD_STATIC_LIBS)
     add_library(libprimesieve-static STATIC ${LIB_SRC})
-    set_target_properties(libprimesieve-static PROPERTIES OUTPUT_NAME primesieve)
+    set_target_properties(libprimesieve-static PROPERTIES OUTPUT_NAME primesieve-static)
     target_link_libraries(libprimesieve-static PRIVATE Threads::Threads ${PRIMESIEVE_LINK_LIBRARIES})
     target_compile_options(libprimesieve-static PRIVATE ${PRIMESIEVE_COMPILE_OPTIONS})
     target_compile_definitions(libprimesieve-static PRIVATE ${PRIMESIEVE_COMPILE_DEFINITIONS})
